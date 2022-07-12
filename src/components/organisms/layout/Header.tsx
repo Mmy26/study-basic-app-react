@@ -43,9 +43,13 @@ export const Header: FC = memo(() => {
           display={{ base: "none", md: "flex" }}
         >
           <Box pr={4}>
-            <Link onClick={onClickUserManegement}>ユーザー一覧</Link>
+            <Link onClick={onClickUserManegement} to={"/home/user_manegement"}>
+              ユーザー一覧
+            </Link>
           </Box>
-          <Link onClick={onClickSetting}>設定</Link>
+          <Link onClick={onClickSetting} to={"/home/setting"}>
+            設定
+          </Link>
         </Flex>
         <MenuIconButton onOpen={onOpen} />
       </Flex>
